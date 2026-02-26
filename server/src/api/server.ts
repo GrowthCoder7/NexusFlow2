@@ -3,10 +3,10 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import http from "http"; 
 import { Server } from "socket.io"; 
-import { workflowQueue } from "../queue/workflowQueue.js";
-import { redisConnection } from "../config/redis.js"; 
-import { NODE_REGISTRY } from "../engine/nodes/index.js";
-import { createNexusAccount } from "../engine/smartAccount.js";
+import { workflowQueue } from "../queue/workflowQueue";
+import { redisConnection } from "../config/redis"; 
+import { NODE_REGISTRY } from "../engine/nodes/index";
+import { createNexusAccount } from "../engine/smartAccount";
 
 const app: express.Application = express();
 
